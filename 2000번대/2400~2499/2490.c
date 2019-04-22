@@ -1,41 +1,30 @@
 #include <stdio.h>
 int main() {
-	char list[3] = { 'A' };
-
-	for (int k = 0; k < 3; k++) {
-
-
-
-		int result[4] = { 0 };
-		int zerocount = 0;
-
-		for (int i = 0; i < 4; i++) {
-			scanf("%d", &result[i]);
-			if (result[i] == 0) {
-				zerocount++;
+	for (int i =0; i <3; i++) {
+			int input;
+			int count = 0;
+			for (int j =0; j <4; j++) {
+				scanf("%d",&input);
+				count += input;
+			}
+			switch(count) {
+			case 0:
+				printf("D\n");
+				break;
+			case 1:
+				printf("C\n");
+				break;
+			case 2:
+				printf("B\n");
+				break;
+			case 3:
+				printf("A\n");
+				break;
+			case 4:
+				printf("E\n");
+				break;
 			}
 		}
 
 
-		switch (zerocount) {
-		case 0:
-			list[k] = 'E';
-			break;
-		case 1:
-			list[k] = 'A';
-			break;
-		case 2:
-			list[k] = 'B';
-			break;
-		case 3:
-			list[k] = 'C';
-			break;
-		case 4:
-			list[k] = 'D';
-			break;
-		}
-	}
-	for (int i = 0; i < 3; i++) {
-		printf("%c\n", list[i]);
-	}
 }
