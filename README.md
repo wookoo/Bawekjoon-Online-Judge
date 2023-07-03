@@ -1,6 +1,9 @@
 
 풀은 문제
 
+레포 이동합니다
+https://github.com/wookoo/BOJ-HUB
+
 ### 2400 ~ 2499
 [바로가기](https://github.com/wookoo/Bawekjoon-Online-Judge/tree/master/2400~2499)
 - 2438
